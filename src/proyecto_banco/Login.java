@@ -1,7 +1,6 @@
 package proyecto_banco;
 
 /**
- *
  * @author Grupo 7
  */
 public class Login {

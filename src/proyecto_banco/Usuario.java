@@ -1,16 +1,8 @@
 package proyecto_banco;
 
-/**
- *
- * @author Grupo 7
- */
-
-import java.awt.GridLayout;
+import javax.swing.*;
+import java.awt.*;
 import java.util.Random;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JPasswordField;
 
 class Usuario {
     private String NombreCompleto;
@@ -18,8 +10,8 @@ class Usuario {
     private String contraseña;
     private double saldoUsuario;
     private int NumeroDeCuenta;
-    
-    public Usuario() { 
+
+    public Usuario() {
     }
 
     public String getUsuario() {
@@ -29,15 +21,15 @@ class Usuario {
     public void setUsuario(String usuario) {
         this.usuario = usuario;
     }
-    
+
     public String getContraseña() {
-        
+
         return contraseña;
     }
-    
+
     public void setContraseña() {
         boolean contraseñaValida = false;
-    
+
         while (!contraseñaValida) {
             JPasswordField passwordField = new JPasswordField();
             JPanel panel = new JPanel(new GridLayout(0, 1));
@@ -46,9 +38,9 @@ class Usuario {
             panel.add(new JLabel("No se permiten caracteres iguales consecutivos"));
             panel.add(passwordField);
             JOptionPane.showMessageDialog(null, panel);
-        
+
             this.contraseña = new String(passwordField.getPassword());
-        
+
             if (this.contraseña.length() < 8) {
                 JOptionPane.showMessageDialog(null, "La contraseña debe tener al menos 8 caracteres");
             } else {
@@ -97,7 +89,5 @@ class Usuario {
         int numeroDeCuentaGenerado = random.nextInt(max - min + 1) + min;
         JOptionPane.showMessageDialog(null, "Su número de cuenta es: " + numeroDeCuentaGenerado);
         this.NumeroDeCuenta = numeroDeCuentaGenerado;
-}
-    
-
+    }
 }
