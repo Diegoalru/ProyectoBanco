@@ -114,7 +114,7 @@ public class Dashboard {
      */
     private void checkBalance() {
         User userById = userController.getUserById(user.getId());
-        JOptionPane.showMessageDialog(null, "Titular: " + userById.getName() + "\n" + "Saldo: ¢ " + userById.getBalance());
+        JOptionPane.showMessageDialog(null, "Identificación de la cuenta: " + userById.getId() + "\nTitular: " + userById.getName() + "\n" + "Saldo: ¢ " + userById.getBalance());
     }
 
     /**
