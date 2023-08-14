@@ -1,0 +1,38 @@
+# Directorios generados por NetBeans
+nbproject/
+dist/
+build/
+
+# Archivos generados por NetBeans
+build.xml
+nb-configuration.xml
+nbactions.xml
+
+# Directorio de respaldo
+private/
+
+# Logs
+*.log
+
+# Archivos de configuración específicos de NetBeans
+.project
+.classpath
+.settings/
+
+# Archivos de respaldo de NetBeans
+*~
+
+# Archivos de respaldo generales
+*.bak
+*.swp
+
+# Bytecode compilado de Java
+*.class
+
+# Archivos temporales
+*.tmp
+
+# Archivos de configuración de IntelliJ IDEA.
+.idea/
+*.iml
+*.iws
